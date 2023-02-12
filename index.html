@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    <title>Simple blog</title>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">MY BLOG</a> 
+        <div class="menuToggle" ></div>
+    </nav>
+   
+   <ul class="navigation">
+    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+    <li><a href="#post" onclick="toggleMenu()">Post</a></li>
+    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+   </ul>
+  
+  <!-- Banner -->
+   <header id="home">
+    <img src="./img/banner.jpg" class="cover">
+    <div class="contentBx">
+        <h1>THE SOUL OF THE WORLD</h1>
+        <h3>A SIMPLE BLOG WEBSITE</h3>
+        <a href="#about" class="btn">About us</a>
+    </div>
+    
+   </header>
+
+   <section class="about" id="about">
+    <div class="title">
+        <h3>ABOUT US</h3>
+    </div>
+    <div class="contentBx">
+        <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Curabitur auctor vehicula congue. Morbi sed facilisis nisi. Donec a orci eget orci consequat vestibulum. Curabitur erat nulla, dapibus nec orci sed, aliquet sagittis justo.<br> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vel interdum tellus, a mollis tortor. Cras sed diam sit amet sem viverra sollicitudin. Fusce mattis eros quis lectus blandit lacinia ac in nibh. Integer eu augue ut ipsum imperdiet ullamcorper. Suspendisse tempus dolor a sem hendrerit, a blandit neque ultricies. Proin semper pharetra ipsum, eu mattis diam suscipit non. Nullam ac hendrerit ligula.<br>
+        <br>
+
+        Nullam iaculis aliquam lacus eget placerat. Morbi quis tellus fermentum, euismod eros in, consectetur velit. Sed luctus id arcu non pulvinar. Fusce venenatis dapibus pharetra. Mauris pulvinar neque metus, id lobortis quam molestie pretium. </p>
+    </div>
+    
+    <div class="content">
+        <div class="imgBx">
+             <img src="./img/post6.jpg" class="cover">   
+        </div>
+    </div>
+</div>
+    </section>
+
+
+
+    <!-- Latest Blog Post -->
+ 
+    <section class="post" id="post">
+        <div class="title">
+            <h3>LATEST POST</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut scelerisque purus. Nam eu lacinia velit, non vestibulum ante.</p>
+        </div>
+
+       <div class="blog-posts">
+
+        <div class="card">
+            <img class="card-img-top" src="img/post2.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h2 class="card-title">Post 1</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+                
+        <div class="card">
+            <img class="card-img-top" src="img/post7.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h2 class="card-title">Post 2</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Read more</a>
+
+            </div> 
+         </div>      
+        <div class="card">
+            <img class="card-img-top" src="img/post5.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h2 class="card-title">Post 3</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Read more</a>
+
+
+
+            </div>
+        </div>
+      </div>
+    
+    </section>
+
+
+
+ <!-- The contact section -->
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h3>GET IN TOUCH</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut scelerisque purus. Nam eu lacinia velit, non vestibulum ante.</p>
+        </div>
+        <div class="contactForm">
+            <div class="row">
+                <input type="text" name="" placeholder="FIRST NAME">
+                <input type="text" name="" placeholder="LAST NAME">
+                
+            </div>
+            <div class="row">
+                <input type="text" name="" placeholder="EMAIL ADDRESS">
+                <input type="text" name="" placeholder="MOBILE NO.">
+            </div>
+            <div class="row2">
+                <textarea placeholder="MESSAGE"></textarea>
+          </div>
+          <div class="row2">
+           <input type="submit" value="Send" class="btn">
+      </div>
+        </div>
+       
+        </section>
+
+
+  <footer>
+     <a href="#" class="logo">My Blog</a>
+   <ul class="footerMenu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#post">Post</a></li>
+    <li><a href="#contact">Contact</a></li>
+   </ul>
+   <p class="copyrightText">Copyright ©2023 Dantis Andreea Iasmina. All Right Reserved. </p>
+
+  </footer>
+
+        <script>
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.onclick = function() {
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+             }
+
+             function toggleMenu(){
+                menuToggle.classList.remove('active');
+                navigation.classList.remove('active');
+             }
+        
+          </script>
+
+</body>
+</html>
